@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Reg-from.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Registration Form</h2>
+
+      <form id="regForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <small class="error"></small>
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <small class="error"></small>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+        <small class="error"></small>
+
+        <label for="confirm">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm"
+          placeholder="Confirm password"
+          required
+        />
+        <small class="error"></small>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="success-message"></p>
+
+      <!-- Table for showing registered users -->
+      <div id="user-data" style="display: none">
+        <h3>Registered User Info</h3>
+        <table id="info-table">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="reg-from.js"></script>
+  </body>
+</html>
