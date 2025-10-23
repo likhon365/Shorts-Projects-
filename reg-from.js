@@ -57,7 +57,7 @@ form.addEventListener("submit", function (e) {
 
   // If valid form
   if (valid) {
-    successMsg.textContent = "✅ Registration Successful!";
+    successMsg.textContent = " Registration Successful!";
 
     // Add user to table
     const newRow = document.createElement("tr");
@@ -74,3 +74,4 @@ form.addEventListener("submit", function (e) {
     form.reset();
   }
 });
+
