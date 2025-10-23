@@ -1,86 +1,115 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(72, 8, 8);
   height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
+
 .form-container {
-  width: 300px;
-  background-color: rgb(141, 57, 57);
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
+  width: 340px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 .form-container h2 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #333;
 }
+
 form label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
-  color: #3f3b3b;
-  padding: 1px;
+  font-weight: 600;
+  color: #444;
 }
 
 form input {
   width: 100%;
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+  outline: none;
+  font-size: 14px;
+}
+
+form input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.4);
+}
+
+/* error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 form button {
   width: 100%;
-  padding: 5px;
-  margin-top: 10px;
-  border: 1px;
-  border-radius: 10px;
-  color: rgb(255, 255, 255);
-  background-color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.error {
-  color: yellow;
-  font-size: 12px;
-  margin-bottom: 5px;
-  display: block;
+
+form button:hover {
+  background-color: rgb(255, 254, 254);
+  color: rgb(0, 0, 0);
+  border: px solid #6a11cb;
 }
 
 #success-message {
-  color: lime;
+  color: green;
   text-align: center;
   font-weight: bold;
   margin-top: 10px;
 }
 
+/* table section */
 #user-data {
-  margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.05);
   padding: 10px;
   border-radius: 10px;
 }
 
 #user-data h3 {
   text-align: center;
-  color: white;
+  color: #333;
+  margin-bottom: 8px;
 }
 
 #info-table {
   width: 100%;
   border-collapse: collapse;
-  color: white;
+  font-size: 14px;
 }
 
 #info-table th,
 #info-table td {
-  border: 1px solid white;
+  border: 1px solid #ccc;
   padding: 6px;
   text-align: center;
+  color: #333;
 }
+
